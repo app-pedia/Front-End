@@ -58,7 +58,7 @@ def data():
                                 app_fnct_process()
                 else :
                         print(now)
-                        time.sleep(60.0)
+                        time.sleep(0.5)
 
 dpthread = Thread(target = data)
 dpthread.daemon = True
