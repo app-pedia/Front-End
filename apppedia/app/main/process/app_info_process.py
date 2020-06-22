@@ -24,7 +24,7 @@ def app_info_process():
             data = {'public_id': 'null', 'name': 'null', 'category': 'null', 'developer_name': 'null', 'developer_public_id': 'null', 'rating_total': 'null', 'rating_average': 'null', 'rating_five': 'null', 'rating_four': 'null', 'rating_three': 'null', 'rating_two': 'null', 'rating_one': 'null', 'install': 'null', 'install_link': 'null', 'image_logo': 'null', 'price': 'null', 'update_date': 'null', 'size': 'null', 'version_current': 'null', 'version_needs': 'null', 'contents_grade': 'null', 'interaction': 'null', 'in_app_products': 'null', 'related_name': 'null', 'related_link': 'null'}
 
             s = requests.session()
-            base_url = 'https://www.androidrank.org/api/application/'+str(application_sheet.cell(row,1).value)+'?key=h5p9kz30e6ls1ehvppvsanfitxaxrneu42oguey51fau6aqh6e1kja00fkecca65'
+            base_url = 'https://www.androidrank.org/api/application/'+str(application_sheet.cell(row,1).value)+'?key=PUT_YOUR_ANDROIDRANK_API_KEY_HERE'
             con = s.get(base_url)
             json_data = json.loads(con.text)
 
